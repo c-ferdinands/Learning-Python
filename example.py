@@ -54,13 +54,59 @@
 #         int = input('Set 0 to die ')
 #     else:
 #         print('You have a nice name.')
-# 
-# pings
+#
 
-int = 0
-while int == 0:
-    ping = input('Pings?: ')
-    if ping == '!!!!!':
-       print('Success!')
-    elif ping != '!!!!!':
-       print('Fail')
+ 
+''' 
+pings
+Small program to check input for 5x! otherwise fail, invalid input returns 'Fuckwit' and dies 
+'''
+#def ping():
+#    int = 0
+#    while int == 0:
+#        ping = input('Pings?: ')
+#        if ping == '!!!!!':
+#           print('Success!')
+#        elif ping == '.....':
+#           print('Fail')
+#        else:
+#           print('Fuckwit')
+#           int = 1
+#ping()
+
+
+def print_options():
+    print("Options:")
+    print(" 'p' print options")
+    print(" 'c' convert from Celsius")
+    print(" 'f' convert from Fahrenheit")
+    print(" 'q' quit the program")
+ 
+def celsius_to_fahrenheit(c_temp):
+    return 9.0 / 5.0 * c_temp + 32
+ 
+def fahrenheit_to_celsius(f_temp):
+    return (f_temp - 32.0) * 5.0 / 9.0
+def menu():
+    choice = "p"
+    while choice != "q":
+        if choice == "c":
+            c_temp = float(input("Celsius temperature: "))
+            print("Fahrenheit:", celsius_to_fahrenheit(c_temp))
+            choice = input("option: ")
+        elif choice == "f":
+            f_temp = float(input("Fahrenheit temperature: "))
+            print("Celsius:", fahrenheit_to_celsius(f_temp))
+            choice = input("option: ")
+        elif choice == "p": #Alternatively choice != "q": so that print when anything unexpected inputed
+            print_options()
+            choice = input("option: ")
+        elif choice != "q":
+            print("Pick a Choice! - Fuckwit")
+            print_options()
+            choice = input("option: ")
+        elif choice == "q":
+            choice = q
+    print("Die")
+
+menu()
