@@ -40,14 +40,27 @@
 #     print("Welcome,", name, ". Type lock to lock.")
 #     while key != "lock":
 #         key = input("")
+# 
+# int = 1
+# while int == 1:
+#     name = input('Your name: ')
+#     if name == 'John1':
+#         print('That is a nice name.')
+#     elif name == 'Jim':
+#         print('... some funny text.')
+#     elif name == 'John':
+#         print('... some funny text.')
+#     elif name == 'Die':
+#         int = input('Set 0 to die ')
+#     else:
+#         print('You have a nice name.')
+# 
+# pings
 
-while 1 == 1:
-    name = input('Your name: ')
-    if name == 'John1':
-        print('That is a nice name.')
-    elif name == 'Jim':
-        print('... some funny text.')
-    elif name == 'John':
-        print('... some funny text.')
-    else:
-        print('You have a nice name.')
+int = 0
+while int == 0:
+    ping = input('Pings?: ')
+    if ping == '!!!!!':
+       print('Success!')
+    elif ping != '!!!!!':
+       print('Fail')
