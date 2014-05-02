@@ -236,14 +236,14 @@ Variables
 #       # numbers[name] = phone
 #
 #
-#fucks = {}
-#who = input("Who is giving the fucks? ")
-#given = input("how many fucks are given? ")
-#fucks[who] = given
-#for x in fucks.keys():
-#    print(who, "\tgives", given, "fucks")
+fucks = {}
+who = input("Who is giving the fucks? ")
+given = input("how many fucks are given? ")
+fucks[who] = given
+for x in fucks.keys():
+    print(who, "\tgives", given, "fucks")
 
-# 
+ 
 # numbers = {}
 # print("Add Name and Number")
 # name = input("Name: ")
@@ -251,8 +251,8 @@ Variables
 # numbers[name] = phone
 # for x in numbers.keys():
 #     print("Name: ", x, "\tNumber:", numbers[x])
-
-
+#
+#
 
 
 
