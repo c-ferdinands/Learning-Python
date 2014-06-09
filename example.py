@@ -236,12 +236,12 @@ Variables
 #       # numbers[name] = phone
 #
 #
-fucks = {}
-who = input("Who is giving the fucks? ")
-given = input("how many fucks are given? ")
-fucks[who] = given
-for x in fucks.keys():
-    print(who, "\tgives", given, "fucks")
+#fucks = {}
+#who = input("Who is giving the fucks? ")
+#given = input("how many fucks are given? ")
+#fucks[who] = given
+#for x in fucks.keys():
+#    print(who, "\tgives", given, "fucks")
 
  
 # numbers = {}
@@ -275,8 +275,15 @@ for x in fucks.keys():
 
 
 
-from time import time, ctime
+from time import time, ctime, sleep
 print(ctime(time()))
 
 
+#list = [1,2,3,3,4,4,5,3,2,3,4,"orage"]
+#for item in list:
+#    print item
+
+while True:
+    sleep(1)
+    print(ctime(time()))
 
