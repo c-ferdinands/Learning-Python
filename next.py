@@ -14,5 +14,5 @@ with open("test.txt", "wt") as out_file:
 
 import subprocess
 def main():
-    subprocess.call(['ls'])
+    subprocess.call(['ls', '/'])
 main()
